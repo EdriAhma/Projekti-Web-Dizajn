@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+        <style>
+            body {
+                font-family: Arial;
+                background: #f7f5f2;
+                background-image: url("kafshet.jpg");
+                text-align: center;
+                margin: 0;
+            }
+            form {
+                background: #FFFFFF;
+                border-radius: 20px;
+                width: 300px;
+                margin: 100px auto;
+                padding: 25px;
+                box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+            }
+            h2 {
+                color: #2D3142;
+            }
+            input:not([type="radio"]):not([type="checkbox"]) {
+                width: 95%;
+                padding: 10px;
+                margin: 8px 0;
+                border-radius: 6px;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+            input:focus {
+                outline: none;
+                border-color: #4A7C59;
+            }
+            .gjinia {
+                text-align: left;
+                margin-bottom: 15px;
+            }
+            .gjinia > label {
+                display: block;
+                margin-bottom: 8px;
+                color: #365E42;
+                font-weight: bold;
+            }
+            .gjinia-options {
+                display: flex;
+                gap: 25px;
+            }
+            .gjinia-options label {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                color: #2D3142;
+            }
+            .gjinia input {
+                accent-color: #4A7C59;
+            }
+            .opsione {
+                text-align: left;
+                margin-top: 15px;
+            }
+            .opsione label {
+                display: block;
+                color: #365E42;
+                margin-bottom: 8px;
+                font-weight: bold;
+            }
+            select {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 6px;
+                background: white;
+                font-family: Arial;
+                font-size: 14px;
+                margin-bottom: 15px;
+            }
+            select:focus {
+                outline: none;
+                border-color: #4A7C59;
+            }
+            input[type="checkbox"] {
+                accent-color: #4A7C59;
+                width: 16px;
+                height: 16px;
+                vertical-align: middle;
+                margin: 10px 5px 10px 0;
+            }
+            input[type="checkbox"] + label {
+                font-size: 13px;
+                color: #2D3142;
+            }
+            a {
+                color: #4A7C59;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            button {
+                width: 95%;
+                padding: 10px;
+                margin-top: 15px;
+                background: #4A7C59;
+                color: white;
+                border: none;
+                border-radius: 6px;
+                cursor: pointer;
+            }
+            button:hover {
+                background: #365E42;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <form>
+            <h2>Sign Up</h2>
+            <input type="text" placeholder="Emri" required>
+            <input type="email" placeholder="Email: emri@example.com" required>
+            <input type="tel" placeholder="Numri i Telefonit">
+            <input type="date" placeholder="Data e Lindjes">
+            <br>
+
+            <div class="gjinia">
+                <label>Gjinia:</label>
+                <div class="gjinia-options">
+                    <label>
+                        <input type="radio" name="Gjinia" value="M">Mashkull
+                    </label>
+                    <label>
+                        <input type="radio" name="Gjinia" value="F">Femër
+                    </label>
+                </div>
+            </div>
+
+            <input type="password" placeholder="Fjalëkalimi" required>
+            <input type="password" placeholder="Konfirmo Fjalëkalimin" required>
+
+            <div class="opsione">
+                <label for="kp">Kafsha e preferuar:</label>
+                <select id="kp" name="kp">
+                    <option value="" disabled selected>
+                        Zgjidhni kafshën e preferuar:
+                    </option>
+                    <option value="qeni">Qeni</option>
+                    <option value="macja">Macja</option>
+                    <option value="lepuri">Lepuri</option>
+                    <option value="tjeter">Tjetër...</option>
+                </select>
+
+            </div>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">
+                Pranoj <a href="terms.html">Kushtet dhe Termat</a>
+            </label>
+            <button type="submit">Regjistrohu</button>
+        </form>
+    </body>
+</html>
